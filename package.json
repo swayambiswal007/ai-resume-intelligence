@@ -1,0 +1,23 @@
+{
+  "name": "gfi-resume-ranker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Resume extraction, classification and ranking prototype for Growth For Impact (LCA Consultant + UI/UX Intern)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "node scripts/build-data.mjs && next build",
+    "start": "npx serve out",
+    "data": "node scripts/build-data.mjs",
+    "report": "node scripts/report.mjs --quiet && node scripts/report.mjs --mode=brief --quiet",
+    "audit": "node scripts/audit-log.mjs",
+    "test:engine": "node scripts/test-engine.mjs",
+    "explain": "node scripts/explain.mjs"
+  },
+  "dependencies": {
+    "mammoth": "1.8.0",
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "type": "module"
+}

@@ -1,0 +1,79 @@
+{
+  "_readme": "Human-review corrections applied after automatic extraction (see README → Data clean-up). Keys are resume IDs. Every change is logged on the profile and shown in the UI under 'Reviewer corrections'.",
+
+  "FT_1793685080301": {
+    "experience": [
+      { "index": 1, "isProject": true, "reason": "Self-built product (Taro Warehouse Simulation), no dates — portfolio project, not employment." },
+      { "index": 2, "isProject": true, "reason": "Labelled 'Independent Product Case Study' — portfolio work, not a job." },
+      { "index": 3, "isProject": true, "reason": "Labelled 'Independent Product Case Study' — portfolio work, not a job." },
+      { "index": 4, "isProject": true, "reason": "Labelled 'Independent Product Case Study' — portfolio work, not a job." }
+    ],
+    "resolve": ["Taro Warehouse Simulation: Dates", "CTO.new: Dates", "Mojar: Dates", "Chalo: Dates"],
+    "notes": ["4 'experience' entries were reclassified as portfolio projects; only the dated UX Audit role (6 months) counts as experience."]
+  },
+  "DVJ_1793685080268": {
+    "projects": [
+      { "index": 1, "mergeIntoPrevious": true, "reason": "'Nova AI Operations SaaS Dashboard - Dark Mode' is the name of the preceding SaaS-dashboard project (printed after its bullets), not a separate project." }
+    ]
+  },
+  "PW_1793685080367": {
+    "experience": [
+      { "index": 0, "company": "SKILLS AND TOOLS", "reason": "Company name had spacing artefacts from conversion ('S K ILLS AN D TOOLS')." }
+    ],
+    "resolve": ["Spacing artefacts"]
+  },
+  "FK_1793685080451": {
+    "experience": [
+      { "index": 1, "dates": "Jun 2025 - Present", "reason": "End date 'Dec 2026' is after the data snapshot (Nov 2026) — treated as ongoing; same months are counted." }
+    ],
+    "notes": ["The Engineer Sahab internship overlaps the current DB Vertex role; overlapping months are counted once."]
+  },
+  "AL_1793685080183": {
+    "notes": ["Freelance graphic design since Oct 2021 runs alongside a B.Tech (2022–2026). It counts as design-adjacent (half weight) for the UI/UX role, not as full UX tenure."]
+  },
+  "SS_1793682784484": {
+    "notes": ["PwC role is marked 'Ongoing' with no start date, so it is left out of tenure (not guessed). Hands-on LCA evidence is a 3-month TATA Motors internship (OpenLCA, cotton gloves)."]
+  },
+  "MS_1793682784442": {
+    "notes": ["The summary's years claim was redacted ('over 2.s') and is ignored. Dated roles total ~19 months including two internships, so the score uses that figure."]
+  },
+  "UI_1793682784506": {
+    "notes": ["The summary is truncated ('Sustainability Consultant with over ainability…'), so the years claim is lost. LCA/EPD work uses Air.e LCA (not GaBi/SimaPro)."]
+  },
+  "APS_1793685080222": {
+    "notes": ["The summary is truncated ('Designer with ry experience'), so the years claim is lost. Tenure comes from dated roles only."]
+  },
+  "HD_1793682784275": {
+    "notes": ["School record 'SSE … 2016 - 2027' has an impossible end year. Ignored (school rows are not scored)."]
+  },
+  "VM_1793682784520": {
+    "notes": ["Certifications list 'ISO' three times with the standard numbers redacted, so they are not counted as ISO 14040/44 evidence. The candidate has 5+ yrs consulting, but LCA appears in only one bullet (cradle-to-grave LCA) plus GaBi/OpenLCA in skills."]
+  },
+  "AR_1793685080207": {
+    "notes": ["Nyx UI collaboration has dates 'null'. Its content counts as design evidence, but it adds 0 months of tenure."]
+  },
+  "MI_1793685080235": {
+    "notes": ["'Founder & Creative Head — Clo Thrifts' has no dates. It is treated as non-design entrepreneurship and adds no tenure."]
+  },
+  "KN_1793685080310": {
+    "notes": ["Very short resume (education + skills only, no projects or experience). The score likely understates the candidate, so check the portfolio manually before rejecting."]
+  },
+  "resume_1793685080327": {
+    "notes": ["The .docx file is empty: no text, images or tables. Ask the candidate to resend the resume."]
+  },
+  "RR_1793682784428": {
+    "notes": ["Only ~6 months in role (Jun 2026–present) plus 2 academic LCA projects. The ISO reference concerns PCF rules (digits redacted, probably ISO 14067)."]
+  },
+  "NP_1793682784325": {
+    "notes": ["Hands-on LCA work used OpenLCA + ecoinvent. GaBi and SimaPro appear in the skills list only, which earns slightly less credit than described use."]
+  },
+  "AK_1793682784184": {
+    "notes": ["'Research Fellow' and 'Junior Executive' at IIT Tirupati share the same dates; those months are counted once. LCA appears only in skills/certifications."]
+  },
+  "PW_1793682784228": {
+    "notes": ["Freelance content writing (2020–2024) overlaps other roles and is not relevant to either JD. The CSIR NEERI role (Jun 2024–present) carries the LCA evidence: GaBi, OpenLCA, many studies."]
+  },
+  "TM_1793682784495": {
+    "notes": ["Headline is 'Sustainability Engineer' but the job title on record is 'Engineer — L&T Technology Services'. Treated as an LCA role because its bullets and 3 projects are SimaPro LCAs."]
+  }
+}
